@@ -10,6 +10,10 @@ body {
     align-items: center;
     padding: 10px;
     background-color: #FFECD1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo img {
@@ -39,13 +43,13 @@ nav ul li:last-child {
 nav ul li a {
     text-decoration: none;
     color: #8E4700;
-    font-size: 16px;
+    font-size: 24px; 
 }
 
 nav ul li a:hover {
     text-decoration: none;
-    color: #8E4700;
-    font-size: 16px;
+    color: #c5b19d;
+    font-size: 24px;
 }
 
 .btn-comprar {
@@ -54,9 +58,11 @@ nav ul li a:hover {
     color: #fff;
     border: none;
     padding: 5px 20px;
-    font-size: 16px;
+    font-size: 20px; 
     border-radius: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* Adicionando uma sombra */
@@ -162,3 +168,114 @@ main{
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.event-info{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.banner-info-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #F07C00;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.event-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background-color: #FFECD1;
+    padding: 10px 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.75;
+}
+
+.event-date{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #663300;
+    text-align: center;
+}
+
+.option1{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #e9c29c;
+    text-align: center;
+    margin-bottom: 1px;
+    text-decoration: line-through 1px #000;
+}
+
+.option2{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #e9c29c;
+    text-align: center;
+    margin-bottom: 1px;
+    text-decoration: line-through 1px #000;
+}
+
+.option3{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #663300;
+    text-align: center;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+.option4{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #e9c29c;
+    text-align: center;
+}
+
+.event-place{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #663300;
+    text-align: center;
+}
+
+.event-detail{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #663300;
+    text-align: center;
+}
+
+.event-contact {
+    background-color: #FFECD1;
+    padding: 50px;
+    text-align: center;
+}
+
+.event-contact h1{
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #8E4700;
+    text-transform: uppercase;
+}
+
